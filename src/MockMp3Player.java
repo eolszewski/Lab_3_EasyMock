@@ -39,11 +39,10 @@ public class MockMp3Player implements Mp3Player {
 
 	@Override
 	public double currentPosition() {
-		return 10.0;
-		/*if (playing)
+		if (playing)
 			return System.nanoTime() - startTime;
 		else
-			return position;*/
+			return position;
 	}
 
 	@Override
